@@ -17,7 +17,7 @@ const Main = () => {
           value={login}
           onChange={(e) => setLogin(e.target.value)}
         />
-        <S.Button>
+        <S.Button to={`/${login}/repositories`}>
           <MdSearch size={42} />
         </S.Button>
       </S.Form>
