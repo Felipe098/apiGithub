@@ -23,7 +23,7 @@ export const Title = styled.h1`
 export const Form = styled.div`
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 583px;
 `;
@@ -51,11 +51,10 @@ export const Button = styled(Link)`
   background: transparent;
   width: 80px;
   height: 64px;
-  border: 3px solid ${(props) => props.theme.text};
+  border: 3px solid ${(props) => props.theme.colors.text};
   transition: background 0.3s;
 
   &:hover {
-    cursor: pointer;
     background: ${(props) => props.theme.colors.container};
   }
 `;

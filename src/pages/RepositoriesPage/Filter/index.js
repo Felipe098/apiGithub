@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as S from './styles';
+import { Container, Selector, Cleaner } from './styles';
 
 const Filter = () => {
   const langs = [
@@ -10,17 +10,17 @@ const Filter = () => {
   ];
 
   const selectors = langs.map(({ name, count, color }) => (
-    <S.Selector key={name.toLowerCase()} color={color}>
+    <Selector key={name.toLowerCase()} color={color}>
       <span>{name}</span>
       <span>{count}</span>
-    </S.Selector>
+    </Selector>
   ));
 
   return (
-    <S.Container>
+    <Container>
       {selectors}
-      <S.Cleaner>Limpar</S.Cleaner>
-    </S.Container>
+      <Cleaner>Limpar</Cleaner>
+    </Container>
   );
 };
 
